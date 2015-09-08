@@ -1,9 +1,15 @@
 describe('triangle', function() {
-  it('determines if it is a triangle', function() {
-    expect(triangle(4, 4, 8)).to.equal(false);
+
+  // it('determines if it is a isosceles', function() {
+  //   expect(triangle(6, 6, 10)).to.equal("isosceles");
+  // });
+
+  it('determines if it is not a triangle', function() {
+    expect(triangle(2, 2, 8)).to.equal("not a triangle");
   });
 
-  // it('is true if all sides are equal', function() {
-  //   expect(triangle(5, 5, 5)).to.equal(true);
-  // });
+  it('determines if it is equilateral', function() {
+    expect(triangle(5, 5, 5)).to.equal("equilateral");
+  });
+
 });
